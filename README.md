@@ -1,11 +1,36 @@
-<div align="center">
+# Weather Intelligence App
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A production-ready Weather Intelligence App built with React, TypeScript, and Vite.
+This app fetches data from the public Open-Meteo APIs directly in the browser and is optimized for static deployments like Cloudflare Pages.
 
-  <h1>Built with AI Studio</h2>
+## Features
+- City search with Geocoding API integration.
+- Current weather display.
+- 7-day forecast visualization using Recharts.
+- Simple planning recommendations based on current weather.
+- Error handling with explicit "City not found" message.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Setup and Run Instructions
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+### Prerequisites
+Make sure you have Node.js installed.
 
-</div>
+### Installation
+1. Clone the repository.
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+### Development
+Start the development server:
+```sh
+npm run dev
+```
+
+### Production Build
+Create a production build for Cloudflare Pages:
+```sh
+npm run build
+```
+The output will be placed in the `dist` directory, which can be deployed to Cloudflare Pages.
